@@ -1,22 +1,22 @@
 package web.model;
 
 public class Car {
-    private String brand;
+    private int id;
     private String model;
     private int maxSpeed;
 
-    public Car(String brand, String model, int maxSpeed) {
-        this.brand = brand;
+    public Car(int id, String model, int maxSpeed) {
+        this.id = id;
         this.model = model;
         this.maxSpeed = maxSpeed;
     }
 
-    public String getBrand() {
-        return brand;
+    public int getId() {
+        return id;
     }
 
-    public void setBrand(String brand) {
-        this.brand = brand;
+    public void setId(int id) {
+        this.id = id;
     }
 
     public String getModel() {
@@ -38,7 +38,7 @@ public class Car {
     @Override
     public String toString() {
         return "Car{" +
-                "brand='" + brand + '\'' +
+                "id=" + id +
                 ", model='" + model + '\'' +
                 ", maxSpeed=" + maxSpeed +
                 '}';
